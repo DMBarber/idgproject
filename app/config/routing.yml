@@ -1,0 +1,4 @@
+furballistic_order:
+    resource: "@FurballisticOrderBundle/Resources/config/routing.php"
+    prefix:   /
+

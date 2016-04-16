@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database
+  name="default"
+  namespace="Furballistic\OrderBundle\Model"
+  defaultIdMethod="native">
+
+  <table name="feline">
+    <column
+      name="id"
+      type="integer"
+      required="true"
+      primaryKey="true"
+      autoIncrement="true" />
+
+    <column
+      name="type"
+      type="varchar"
+      primaryString="true"
+      size="30" />
+
+    <column
+      name="gender"
+      type="char" />
+
+    <column
+      name="age"
+      type="integer" />
+
+    <column
+      name="price"
+      type="decimal" />
+
+    <column
+      name="description"
+      type="longvarchar" />
+  </table>
+
+  <table name="category">
+    <column
+      name="id"
+      type="integer"
+      required="true"
+      primaryKey="true"
+      autoIncrement="true" />
+
+    <column
+      name="type"
+      type="varchar"
+      primaryString="true"
+      size="30" />
+  </table>
+
+  <table name="customer">
+    <column
+      name="id"
+      type="integer"
+      required="true"
+      primaryKey="true"
+      autoIncrement="true" />
+
+    <column
+      name="fullname"
+      type="char" />
+
+    <column
+      name="address1"
+      type="varchar" />
+
+    <column
+      name="address2"
+      type="varchar" />
+
+    <column
+      name="city"
+      type="varchar" />
+
+    <column
+      name="state"
+      type="varchar" />
+
+    <column
+      name="zipcode"
+      type="varchar" />
+  </table>
+
+  <table name="orders">
+    <column
+      name="id"
+      type="integer"
+      required="true"
+      primaryKey="true"
+      autoIncrement="true" />
+
+    <column
+      name="custid"
+      type="integer" />
+
+    <column
+      name="felid"
+      type="integer" />
+
+    <column
+      name="reference_number"
+      type="char"
+      size="100" />
+  </table>
+
+</database>
